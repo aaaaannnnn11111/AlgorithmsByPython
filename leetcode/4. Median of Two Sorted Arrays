@@ -47,3 +47,11 @@ class Solution(object):
     		return a[i-1]
     	else:
     		return b[j-1]
+
+
+def s(k, l):
+    n = len(k) + len(l)
+    if n % 2 :
+        medium = [n/2, n/2 + 1]
+    else :
+        medium = n//2 + 1

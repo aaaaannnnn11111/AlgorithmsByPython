@@ -24,3 +24,16 @@ class Solution(object):
             val /= 10
             pNode = pNode.next
         return pHead.next
+
+a1 = ListNode(2)
+a2 =  ListNode(4)
+a3 = ListNode(3)
+a1.next = a2
+a2.next = a3
+
+b1 = ListNode(5)
+b2 = ListNode(6)
+b3 = ListNode(4)
+b1.next = b2
+b2.next = b3
+solution(a1 , b2)

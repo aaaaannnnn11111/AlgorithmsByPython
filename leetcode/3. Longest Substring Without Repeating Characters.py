@@ -26,3 +26,15 @@ class Solution(object):
 
 s = Solution()
 print(s.lengthOfLongestSubstring('pwwkew'))
+
+
+def s(a):
+    dicta = []
+    max = 0
+    inx = 0
+    for i, ch in enumerate(a):
+        if ch not in dicta or dicta[ch] < inx:
+            maxd = max(maxd , i - inx + 1)
+        else:
+            inx = dicta[ch] + 1
+        dicta[ch] = [i]
